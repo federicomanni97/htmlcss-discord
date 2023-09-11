@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 :root{
@@ -10,4 +11,58 @@
     --greymain-background: #F6F6F6;
     --footer-background: #23272A;
     --footer-titles: #7088D9;
+}
+
+.debug{
+    border: 1px solid black;
+}
+
+header{
+    background-color: var(--nav-background);
+    color: var(--primary-color);
+    padding: ;
+    max-width: 1200px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 20px 70px;
+}
+
+div > img{
+    display: block;
+    max-width: 1200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.c-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 600 1200px;
+    
 }
