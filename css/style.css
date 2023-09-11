@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nav-background:#255EE9;
+    --primary-color: #FFFFFF;
+    --greymain-background: #F6F6F6;
+    --footer-background: #23272A;
+    --footer-titles: #7088D9;
+}
