@@ -13,6 +13,10 @@
     --footer-titles: #7088D9;
 }
 
+body{
+    background-color: var(--primary-color);
+}
+
 .debug{
     border: 1px solid black;
 }
@@ -52,6 +56,15 @@ a{
     justify-content: center;
 }
 
+.log-in{
+    background-color: var(--primary-color);
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 14px;
+}
+
 #hero > div{
     min-height: 600px;
     text-align: center;  
@@ -71,7 +84,23 @@ p{
 }
 
 button{
-    margin: 35px 40px;
+    margin: 35px 10px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.button1{
+    border-style: none;
+    background-color: var(--greymain-background);
+    color: var(--footer-background);
+    font-size: 15px;
+}
+
+.button2{
+    border-style: none;
+    background-color: var(--footer-background);
+    color: var(--primary-color);
+    font-size: 15px;
 }
 
 
@@ -89,4 +118,13 @@ button{
     justify-content: center;
     flex-basis: 600 1200px;
     
+}
+
+section > .grey-bg{
+    background-color: var(--greymain-background)
+}
+
+footer{
+    background-color: var(--footer-background);
+    color: var(--primary-color);
 }
