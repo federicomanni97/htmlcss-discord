@@ -120,11 +120,65 @@ button{
     
 }
 
-section > .grey-bg{
+.grey-bg{
     background-color: var(--greymain-background)
 }
 
 footer{
     background-color: var(--footer-background);
     color: var(--primary-color);
+    margin-top: 150px;
 }
+
+.main-image{
+    margin: 80px 0;
+    display: block;
+}
+
+.main-text{
+    width: 60%;
+    padding: 30px 0px;
+}
+
+h2{
+    font-size: 45px;
+    font-weight: bolder;
+
+}
+
+.p-section{
+    font-size: 17px;
+    padding: 30px 0px;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.lastsection-text{
+    width: 100%;
+    padding: 0px 80px;
+    margin-top: 85px;
+}
+
+.lastsection-image > img{
+    width: 100%;
+    display: block;
+}
+
+h3{
+    font-size: 25px;
+    margin: 50px 0px;
+}
+
+.lastsection-button{
+    background-color: var(--footer-titles);
+    padding: 15px;
+    border-radius: 25px;
+    line-height: 20px;
+}
+
