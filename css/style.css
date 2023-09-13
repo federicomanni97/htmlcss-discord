@@ -17,9 +17,6 @@ body{
     background-color: var(--primary-color);
 }
 
-.debug{
-    border: 1px solid black;
-}
 
 header{
     background-color: var(--nav-background);
@@ -35,12 +32,18 @@ header{
 li{
     list-style: none;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 7px 20px;
+
 }
 
 a{
     text-decoration: none;
     color: var(--primary-color);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--footer-titles);
 }
 
 .d-flex{
@@ -49,7 +52,7 @@ a{
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: 20px 70px;
+    padding: 10px 70px;
 }
 
 .j-content{
@@ -83,26 +86,60 @@ p{
   font-size: 20px;  
 }
 
-button{
-    margin: 35px 10px;
-    padding: 15px;
-    border-radius: 25px;
-}
-
-.button1{
+#macdownload1{
     border-style: none;
     background-color: var(--greymain-background);
     color: var(--footer-background);
     font-size: 15px;
+    margin: 35px 10px;
+    padding: 15px;
+    border-radius: 25px;    
 }
 
-.button2{
+.margin-buttons{
+    margin: 35px 10px;
+}
+
+#macdownload1:hover{
+    color: var(--footer-titles);
+    box-shadow: 0px 0px 10px rgba(90, 83, 83, 0.6);
+    text-decoration: none;
+}
+
+#macdownload1::before{
+    content: "\2193";
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+#download2{
     border-style: none;
     background-color: var(--footer-background);
     color: var(--primary-color);
     font-size: 15px;
+    padding: 15px;
+    border-radius: 25px;
 }
 
+#download2:hover{
+    color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(39, 38, 38, 0.3);
+    text-decoration: none;
+}
+
+#macdownload2::before{
+    content: "\2193";
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+#macdownload2:hover{
+    color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(90, 83, 83, 0.6);
+    text-decoration: none;
+}
 
 #hero{
     background-image: url(../img/jumbo.png);
@@ -124,31 +161,51 @@ button{
     background-color: var(--greymain-background)
 }
 
+
+.wave {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    opacity: 0.03;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.stars{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
 footer{
     background-color: var(--footer-background);
     color: var(--primary-color);
-    margin-top: 150px;
+    padding: 50px 100px;
 }
 
 .main-image{
     margin: 80px 0;
     display: block;
+    width: 60%;
 }
 
 .main-text{
-    width: 60%;
-    padding: 30px 0px;
+    max-width: 40%;
+    padding: 30px 30px;
 }
 
 h2{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bolder;
 
 }
 
 .p-section{
-    font-size: 17px;
-    padding: 30px 0px;
+    min-width: 60%;
+    padding: 25px 0px;
 }
 
 .row-reverse{
@@ -162,7 +219,6 @@ h2{
 .lastsection-text{
     width: 100%;
     padding: 0px 80px;
-    margin-top: 85px;
 }
 
 .lastsection-image > img{
@@ -180,5 +236,60 @@ h3{
     padding: 15px;
     border-radius: 25px;
     line-height: 20px;
+    text-decoration-style: none;
 }
 
+.lastdiv-section{
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.list-title{
+    color: var(--footer-titles);
+}
+
+.footer-list{
+    padding: 5px 0px;
+}
+
+.space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list-bigtitle{
+    color: var(--footer-titles);
+    font-size: 30px;
+    padding: 10px;
+}
+
+.footerborder{
+    border-bottom: 1px solid var(--footer-titles);
+    padding-bottom: 65px;
+    margin: 20px 100px;
+}
+
+.leftside-footer{
+    width: 20%;
+}
+
+
+.flag {
+    width: 20px;
+}
+
+div > select{
+    background-color: var(--footer-background);
+    color: var(--primary-color);
+    border-style: none;
+}
+
+.custom-select{
+    padding: 10px;
+}
+
+.socialicons {
+    display: inline-block;
+    padding: 10px;
+}

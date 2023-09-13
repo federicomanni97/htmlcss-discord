@@ -7,10 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Discord</title>
 </head>
 <body>
-    <header class="">
+    <header>
         <nav class="container d-flex">
             <img src="img/logo.svg" alt="Logo">
             <ul class="d-flex container">
@@ -27,8 +29,10 @@
                <div class="hero-text">
                  <h1>Il tuo posto per parlare</h1>
                  <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
-                 <button class="button1">Scarica per Mac </button>
-                 <button class="button2">Apri Discord nel tuo browser</button>
+                <div class="margin-buttons">
+                   <a href="" id="macdownload1"> Scarica per Mac </a>
+                   <a href="" id="download2">Apri Discord nel tuo browser</a>
+                </div>
                </div>
             </div>
         </div>
@@ -40,7 +44,7 @@
     <main class="debug">
         <!--section 1-->
         <section>
-            <div class="container debug d-flex j.content">
+            <div class="container d-flex j.content">
                 <div class="main-image">
                     <img src="img/item1.svg" alt="immagine1">
                 </div>
@@ -48,12 +52,13 @@
                     <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
                     <p class="p-section">I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
                 </div>
-            </div>
+            </div>            
         </section>
     
         <!--section 2-->
+        <img src="img/wave.svg" alt="wave" class="wave">
         <section class="grey-bg">
-            <div class="container debug d-flex j.content row-reverse">
+            <div class="container d-flex j.content row-reverse">
                 <div class="main-image">
                     <img src="img/item2.svg" alt="immagine2">
                 </div>
@@ -65,8 +70,9 @@
         </section>
 
         <!--section 3-->
+        <img src="img/wave.svg" alt="wave" class="wave rotate">
         <section>
-            <div class="container debug d-flex j.content">
+            <div class="container d-flex j.content">
                 <div class="main-image">
                     <img src="img/item3.svg" alt="immagine3">
                 </div>
@@ -78,25 +84,103 @@
         </section>
 
         <!--section 4-->
+        <img src="img/wave.svg" alt="wave" class="wave">
         <section class="grey-bg">
-            <div class="container debug">
+            <div class="container">
                 <div class="lastsection-text center-align">
-                    <h2>Tecnologia affidabile per tanersi in contatto</h2>
+                    <h2>Tecnologia affidabile per tenersi in contatto</h2>
                     <p class="p-section">Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
                 </div>
                 <div class="center-align lastsection-image">
                     <img src="img/item4-big.svg" alt="immagine-4big">
                 </div>
-                <div class="center-align">
+                <div class="center-align stars">
                     <h3>Pronto a iniziare la tua avventura?</h3>
-                    <a href="" class="lastsection-button">Scarica per Mac</a>
+                  <div class="lastdiv-section">
+                    <a href="" class="lastsection-button" id="macdownload2"> Scarica per Mac</a>
+                  </div>
                 </div>
             </div>
         </section>
     </main>
     
-    <footer class="debug">
-        testo footer
+    <footer>
+         <!--lista 1-->
+       <div  class="space-evenly footerborder paddingfooter">
+        <div class="leftside-footer">
+          <h2 class="list-bigtitle">Il tuo posto per parlare</h2>
+            <div class="custom-select">
+              <img src="img/ita.png" alt="" class="flag">
+              <select>
+                <option value="">Italiano</option>
+                <option value="">Inglese</option>
+                <option value="">Francese</option>
+                <option value="">Spagnolo</option>
+              </select>
+            </div>
+            <div class="socialicons">
+                <a href="https://twitter.com/discord"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="socialicons">    
+                <a href="https://www.instagram.com/discord/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="socialicons">   
+                <a href="https://www.facebook.com/discord/"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="socialicons">    
+                <a href="https://www.youtube.com/discord"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>     
+         
+         <!--lista 2-->   
+         <ul>
+            <li class="list-title">Prodotto</li>
+            <a href=""><li>Scarica</li></a>
+            <a href=""><li>Perché Discord</li></a>
+            <a href=""><li>Nitro</li></a>
+            <a href=""><li>Sicurezza</li></a>
+            <a href=""><li>Assistenza</li></a>
+          </ul>
+       
+         <!--lista 3-->  
+         <ul>
+            <li class="list-title">Compagnia</li>
+            <a href=""><li>Chi siamo</li></a>
+            <a href=""><li>Lavora con noi</li></a>
+            <a href=""><li>Marchio</li></a>
+            <a href=""><li>Redazione</li></a>
+            <a href=""><li>Negozio</li></a>
+         </ul>
+        
+       <!--lista 4-->
+         <ul>
+            <li class="list-title">Risorse</li>
+            <a href=""><li>Scarica</li></a>
+            <a href=""><li>Perché Discord</li></a>
+            <a href=""><li>Nitro</li></a>
+            <a href=""><li>Sicurezza</li></a>
+            <a href=""><li>Assistenza</li></a>
+            <a href=""><li>Scarica</li></a>
+            <a href=""><li>Perché Discord</li></a>
+            <a href=""><li>Nitro</li></a>
+            <a href=""><li>Sicurezza</li></a>
+            <a href=""><li>Assistenza</li></a>
+         </ul>
+
+         <!--lista 5-->
+         <ul>
+            <li class="list-title">Norme</li>
+            <a href=""><li>Scarica</li></a>
+            <a href=""><li>Perché Discord</li></a>
+            <a href=""><li>Nitro</li></a>
+            <a href=""><li>Sicurezza</li></a>
+            <a href=""><li>Assistenza</li></a>
+         </ul>
+       </div>
+       <div class="d-flex">
+          <img src="img/logo.svg" alt="Logo-footer">
+          <a href="" class="lastsection-button">Registrati</a>
+       </div> 
     </footer>
 </body>
 </html>
